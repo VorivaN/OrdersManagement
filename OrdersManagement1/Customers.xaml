@@ -1,0 +1,21 @@
+﻿<Window x:Class="OrdersManagement1.Customers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrdersManagement1"
+        mc:Ignorable="d"
+        Title="Customers" Height="450" Width="558.009" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <DataGrid x:Name="CustomersDataGrid" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="328" Loaded="CustomersDataGrid_Loaded"/>
+        <TextBox x:Name="FullNameTextBox" HorizontalAlignment="Left" Height="23" Margin="420,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="MoneyTextBox" HorizontalAlignment="Left" Height="23" Margin="420,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+
+        <Label Content="FullName" HorizontalAlignment="Left" Margin="343,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Money" HorizontalAlignment="Left" Margin="343,38,0,0" VerticalAlignment="Top" />
+
+        <Button x:Name="NewCustomerButton" Content="Add new customer" HorizontalAlignment="Left" Margin="343,66,0,0" VerticalAlignment="Top" Width="197" Click="NewCustomerButton_Click"/>
+        <Button x:Name="DeleteCustomerButton" Content="Delete selected customer" HorizontalAlignment="Left" Margin="343,116,0,0" VerticalAlignment="Top" Width="197" RenderTransformOrigin="0.148,0.455" Click="DeleteCustomerButton_Click"/>
+        <Button x:Name="AddMoneyButton" Content="Add money to selected customer" HorizontalAlignment="Left" Margin="343,91,0,0" VerticalAlignment="Top" Width="197" RenderTransformOrigin="0.147,-0.474" Click="AddMoneyButton_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="OrdersManagement1.Products"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrdersManagement1"
+        mc:Ignorable="d"
+        Title="Products" Height="450" Width="572.426" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Grid>
+        <DataGrid x:Name="ProductsDataGrid" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="336"/>
+        <TextBox x:Name="ArticleTextBox" HorizontalAlignment="Left" Height="23" Margin="412,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <TextBox x:Name="QuantityTextBox" HorizontalAlignment="Left" Height="23" Margin="412,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <Label Content="Articul" HorizontalAlignment="Left" Margin="355,6,0,0" VerticalAlignment="Top"/>
+        <Label Content="Quantity" HorizontalAlignment="Left" Margin="351,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.538,1.087" />
+        <Button x:Name="AddProductButton" Content="Add new product" HorizontalAlignment="Left" Margin="355,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,0.516" Width="199" Click="AddProductButton_Click" />
+        <Label Content="Cost" HorizontalAlignment="Left" Margin="355,37,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.471,0.311"/>
+        <TextBox x:Name="CostTextBox" HorizontalAlignment="Left" Height="23" Margin="412,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <Button x:Name="IncButton" Content="Increase selected product quantity" HorizontalAlignment="Left" Margin="355,119,0,0" VerticalAlignment="Top" Width="199" Click="IncButton_Click"/>
+
+    </Grid>
+</Window>
